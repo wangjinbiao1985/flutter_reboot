@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="425b6818-8f8a-49ee-9ccd-54691a83aa3b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/wangjinbiao/flutter_reboot/FlutterRebootPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/wangjinbiao/flutter_reboot/FlutterRebootPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_reboot.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_reboot.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

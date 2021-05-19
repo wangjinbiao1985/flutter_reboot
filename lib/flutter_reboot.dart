@@ -1,5 +1,6 @@
 
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/services.dart';
 
@@ -23,5 +24,20 @@ class FlutterReboot {
   static Future<bool> get isRooted async {
     final bool root = await _channel.invokeMethod('is_rooted');
     return root;
+  }
+
+  static Future<bool> installAPK({required File file}) async {
+    if (Platform.isAndroid) {
+      try {
+        final bool isInstalled = await _channel.invokeMethod(
+            'install_apk', <String, String>{'filePath': file.path});
+        return isInstalled;
+      } on PlatformException catch (e) {
+        throw "安装错误，Code: ${e.code}. Message: ${e.message}. Details: ${e.details}";
+      }
+    } else {
+      // Return false if not Android.
+      return false;
+    }
   }
 }

@@ -37,6 +37,8 @@ public class FlutterRebootPlugin implements FlutterPlugin, MethodCallHandler {
       reboot();
     } else if (call.method.equals("is_rooted")) {
       result.success(isDeviceRooted());
+    } else if (call.method.equals("install_apk")) {
+      new InstallingTask(result, call).execute();
     } else {
       result.notImplemented();
     }
