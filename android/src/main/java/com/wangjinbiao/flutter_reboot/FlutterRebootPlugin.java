@@ -31,17 +31,11 @@ public class FlutterRebootPlugin implements FlutterPlugin, MethodCallHandler {
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-//    if (call.method.equals("reboot_app")) {
-//      ProcessPhoenix.triggerRebirth(context);
-//    } else {
-//      result.notImplemented();
-//    }
-//    if (call.method.equals("reboot_system")) {
-//      reboot();
-//    } else {
-//      result.notImplemented();
-//    }
-    if (call.method.equals("is_rooted")) {
+    if (call.method.equals("reboot_app")) {
+      ProcessPhoenix.triggerRebirth(context);
+    } else if (call.method.equals("reboot_system")) {
+      reboot();
+    } else if (call.method.equals("is_rooted")) {
       result.success(isDeviceRooted());
     } else {
       result.notImplemented();
