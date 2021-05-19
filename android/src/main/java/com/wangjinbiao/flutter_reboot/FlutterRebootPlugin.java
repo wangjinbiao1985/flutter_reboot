@@ -58,15 +58,15 @@ public class FlutterRebootPlugin implements FlutterPlugin, MethodCallHandler {
     channel.setMethodCallHandler(null);
   }
 
-  public static void reboot() {
+  public void reboot() {
     runAsRoot("reboot");
   }
 
-  public static List<String> runAsRoot(String command) {
+  public List<String> runAsRoot(String command) {
     return Shell.SU.run(command);
   }
 
-  public static boolean isDeviceRooted() {
+  public boolean isDeviceRooted() {
     return Shell.SU.available();
   }
 }
