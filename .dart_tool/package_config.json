@@ -131,10 +131,10 @@
       "name": "flutter_reboot",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.10"
     }
   ],
-  "generated": "2021-05-19T06:40:32.154474Z",
+  "generated": "2021-05-19T06:52:03.167681Z",
   "generator": "pub",
   "generatorVersion": "2.13.0"
 }

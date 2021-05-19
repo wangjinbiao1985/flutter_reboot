@@ -12,16 +12,16 @@ class FlutterReboot {
   //   return version;
   // }
 
-  static Future<void> rebootApp async {
+  static Future<void> rebootApp() async {
     await _channel.invokeMethod('reboot_app');
   }
 
-  static Future<void> rebootSystem async {
+  static Future<void> rebootSystem() async {
     await _channel.invokeMethod('reboot_system');
   }
 
-  static Future<bool?> get isRooted async {
-    final bool? root = await _channel.invokeMethod('is_rooted');
+  static Future<bool> isRooted() async {
+    final bool root = await _channel.invokeMethod('is_rooted');
     return root;
   }
 }
