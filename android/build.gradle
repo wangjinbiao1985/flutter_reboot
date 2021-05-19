@@ -1,0 +1,36 @@
+group 'com.wangjinbiao.flutter_reboot'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies {
+    implementation 'com.jakewharton:process-phoenix:2.0.0'
+    implementation 'eu.chainfire:libsuperuser:1.1.0.+'
+    implementation 'org.markdownj:markdownj-core:0.4'
+}
