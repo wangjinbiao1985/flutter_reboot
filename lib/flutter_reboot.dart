@@ -20,7 +20,7 @@ class FlutterReboot {
     await _channel.invokeMethod('reboot_system');
   }
 
-  static Future<bool> isRooted() async {
+  static Future<bool> get isRooted async {
     final bool root = await _channel.invokeMethod('is_rooted');
     return root;
   }
