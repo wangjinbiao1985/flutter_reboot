@@ -26,7 +26,7 @@ class FlutterReboot {
     return root;
   }
 
-  static Future<bool> installAPK({required File file}) async {
+  static Future<bool> installAPK({File file}) async {
     if (Platform.isAndroid) {
       try {
         final bool isInstalled = await _channel.invokeMethod(
