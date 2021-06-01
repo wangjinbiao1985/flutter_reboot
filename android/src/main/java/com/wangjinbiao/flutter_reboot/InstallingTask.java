@@ -36,7 +36,7 @@ public class InstallingTask extends AsyncTask<String, Void, InstallingResult> {
             File file = new File(filePath);
             // Check if file is exist.
             if (file.exists()) {
-                String command = "pm install  '" + filePath + "'";
+                String command = "pm install -r '" + filePath + "'";
                 Process process = Runtime.getRuntime().exec(new String[]{"su", "-c", command});
                 // Run command.
                 process.waitFor();

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="425b6818-8f8a-49ee-9ccd-54691a83aa3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_reboot.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_reboot.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,5 +43,11 @@
       <updated>1621393472774</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="350" y="195" key="new project wizard" timestamp="1622514429266">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="350" y="195" key="new project wizard/0.23.1680.975@0.23.1680.975" timestamp="1622514429266" />
   </component>
 </project>
